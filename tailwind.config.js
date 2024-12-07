@@ -4,7 +4,6 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        bebasNeue: ["Bebas Neue"],
         manrope: ["Manrope"],
       },
       colors: {

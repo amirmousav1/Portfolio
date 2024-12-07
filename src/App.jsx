@@ -49,7 +49,7 @@ function App() {
     <div className="bg-[#0A0A0A] font-manrope text-[#C7C7C7]">
       <div className="container mx-auto">
         <header className="sm:h-24 h-[76px] flex justify-between items-center px-4">
-          <span className="text-[28px] sm:text-[32px] font-bebasNeue">
+          <span className="font-bold sm:text-[18px] md:text-[22px] uppercase font-manrope">
             Amir Mousavi
           </span>
           <nav>
@@ -73,9 +73,9 @@ function App() {
         <div className="container mx-auto px-4">
           <section className="flex flex-col sm:flex-row items-center justify-between gap-16 sm:gap-2 mt-10 sm:mt-7 pb-[64px] sm:pb-[71px]">
             <div className="flex-1">
-              <h1 className="font-bebasNeue text-[57px] sm:text-[70px] md:text-[80px] lg:text-[101px] leading-[100%] sm:leading-[90%] text-white">
+              <h1 className="font-manrope text-[37px] sm:text-[43px] md:text-[47px] lg:text-[64px] xl:text-[70px] leading-[120%] font-extrabold text-white">
                 HI, I AM <br />
-                AMIR MOUSAVI.
+                AMIR MOUSAVI
               </h1>
               <p className="text-base sm:text-lg mt-3 sm:mt-2">
                 A Shiraz based front-end developer passionate about building
@@ -158,7 +158,7 @@ function App() {
         </div>
         <div className="border-b border-[#484848]"></div>
         <section className="container mx-auto px-4 mt-16 md:mt-20">
-          <h2 className="font-bebasNeue text-[43px] md:text-[76px] leading-[100%] text-white">
+          <h2 className="font-manrope uppercase font-extrabold text-[26px] md:text-[40px] lg:text-[50px] xl:text-[58px] leading-[100%] text-white">
             Featured Projects
           </h2>
           <p className="leading-[150%] mt-3 md:mt-2">
@@ -178,7 +178,7 @@ function App() {
           className="container mx-auto px-4 pt-20 md:pt-[122px] md:grid grid-cols-5 pb-20 md:pb-[120px]"
         >
           <div className="col-span-2">
-            <h2 className="font-bebasNeue text-[57px] md:text-[76px] leading-[100%] text-white">
+            <h2 className="font-manrope uppercase font-extrabold text-[36px] md:text-[40px] lg:text-[50px] xl:text-[58px] leading-[100%] text-white">
               About me
             </h2>
           </div>
@@ -277,14 +277,14 @@ function App() {
           className="container mx-auto px-4 lg:flex pb-16 md:pb-[107px] pt-20 lg:pt-[120px] gap-6"
         >
           <div className="flex-1">
-            <h3 className="font-bebasNeue text-[50px] md:text-[76px] leading-[100%] text-white">
+            <h3 className="font-manrope uppercase font-extrabold text-[34px] md:text-[40px] lg:text-[50px] xl:text-[58px] leading-[100%] text-white">
               My Capabilities
             </h3>
           </div>
           <div className="flex-1 mt-3 lg:mt-0">
             <p className="text-base md:text-[18px] leading-[160%] md:leading-[150%]">
-              I love learning new things and growing my skills. Right now, I'm
-              good at the following:
+              I love learning new things and growing my skills. Right now,
+              I&apos;m good at the following:
             </p>
             <div className="mt-6 lg:mt-[32px]">
               <ul className="flex text-sm lg:text-base font-bold gap-3 lg:gap-4 flex-wrap">
@@ -307,8 +307,8 @@ function App() {
         >
           <div className="flex-1 flex flex-col justify-between">
             <div>
-              <h3 className="font-bebasNeue text-[50px] md:text-[76px] leading-[100%] text-white">
-                Let's connect
+              <h3 className="font-manrope uppercase font-extrabold text-[36px] md:text-[40px] lg:text-[50px] xl:text-[58px] leading-[100%] text-white">
+                Let&apos;s connect
               </h3>
               <div className="mt-4 flex flex-col gap-2 md:text-[18px]">
                 <span>
@@ -318,7 +318,7 @@ function App() {
                   </span>
                 </span>
                 <span>
-                  For more info, here's my{" "}
+                  For more info, here&apos;s my{" "}
                   <a
                     className="border-b py-1 border-primary text-white"
                     href="#"

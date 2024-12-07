@@ -1,15 +1,15 @@
 function Project({ data }) {
   return (
     <div className="md:flex items-center gap-12 mb-[96px] md:mb-[120px]">
-      <div className="bg-[#1A1A1A] hover:bg-[#2D2D2D] duration-300 hover:-translate-y-5 flex-1 aspect-square rounded-xl md:w-[500px] flex items-center p-8 md:p-14">
+      <div className="bg-[#1A1A1A] hover:bg-[#2D2D2D] duration-300 hover:-translate-y-5 flex-1 aspect-square rounded-xl md:w-[500px] flex items-center">
         <img
-          className="rounded-xl object-cover"
+          className="rounded-xl object-cover h-full"
           src={`${data.image}`}
           alt={`${data.title}`}
         />
       </div>
       <div className="flex-1 mt-10 md:mt-0">
-        <h3 className="text-[24px] md:text-[32px] font-medium leading-[140%]">
+        <h3 className="text-[24px] md:text-[32px] text-white font-medium leading-[140%]">
           {data.title}
         </h3>
         <p className="mt-4 leading-[150%]">{data.description}</p>
