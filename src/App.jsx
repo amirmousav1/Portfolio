@@ -41,6 +41,18 @@ function App() {
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
+  const projectsRef = useRef(null);
+  const menuRef = useRef(null);
+
+  function toggleMobileMenu() {
+    menuRef.current.classList.remove("hidden");
+    document.body.classList.add("overflow-hidden");
+  }
+
+  function closeMobileMenu() {
+    menuRef.current.classList.add("hidden");
+    document.body.classList.remove("overflow-hidden");
+  }
 
   function handleScroll(element) {
     element.current.scrollIntoView({ behavior: "smooth" });
@@ -48,20 +60,57 @@ function App() {
   return (
     <div className="bg-[#0A0A0A] font-manrope text-[#C7C7C7]">
       <div className="container mx-auto">
-        <header className="sm:h-24 h-[76px] flex justify-between items-center px-4">
+        <header className="sm:h-24 h-[76px] flex justify-between items-center px-4 relative">
           <span className="font-bold sm:text-[18px] md:text-[22px] uppercase font-manrope">
             Amir Mousavi
           </span>
-          <nav>
-            <ul className="flex gap-4 text-sm font-medium">
+          <button onClick={toggleMobileMenu} className="sm:hidden">
+            <svg
+              width="32"
+              height="14"
+              viewBox="0 0 32 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 1H32" stroke="#C7C7C7" strokeWidth="2" />
+              <path d="M0 13H32" stroke="#C7C7C7" strokeWidth="2" />
+            </svg>
+          </button>
+          <nav
+            onClick={closeMobileMenu}
+            ref={menuRef}
+            className="hidden absolute sm:static min-h-dvh top-0 sm:top-auto sm:min-h-0 sm:block bg-dark sm:bg-transparent sm:left-auto sm:w-auto left-0 w-full bg-opacity-95"
+          >
+            <ul className="flex flex-col sm:flex-row gap-8 sm:gap-4 text-sm font-medium px-5 py-10 sm:p-0 h-dvh sm:h-auto bg-secondary sm:bg-transparent w-2/3 sm:w-auto">
               <li>
-                <button onClick={() => handleScroll(aboutRef)}>About</button>
+                <button
+                  className="w-full sm:w-auto text-left hover:text-white duration-300"
+                  onClick={() => handleScroll(projectsRef)}
+                >
+                  Projects
+                </button>
               </li>
               <li>
-                <button onClick={() => handleScroll(skillsRef)}>Skills</button>
+                <button
+                  className="w-full sm:w-auto text-left hover:text-white duration-300"
+                  onClick={() => handleScroll(aboutRef)}
+                >
+                  About
+                </button>
               </li>
               <li>
-                <button onClick={() => handleScroll(contactRef)}>
+                <button
+                  className="w-full sm:w-auto text-left hover:text-white duration-300"
+                  onClick={() => handleScroll(skillsRef)}
+                >
+                  Skills
+                </button>
+              </li>
+              <li>
+                <button
+                  className="w-full sm:w-auto text-left hover:text-white duration-300"
+                  onClick={() => handleScroll(contactRef)}
+                >
                   Contact
                 </button>
               </li>
@@ -157,7 +206,10 @@ function App() {
           </section>
         </div>
         <div className="border-b border-[#484848]"></div>
-        <section className="container mx-auto px-4 mt-16 md:mt-20">
+        <section
+          ref={projectsRef}
+          className="container mx-auto px-4 pt-16 md:pt-20"
+        >
           <h2 className="font-manrope uppercase font-extrabold text-[26px] md:text-[40px] lg:text-[50px] xl:text-[58px] leading-[100%] text-white">
             Featured Projects
           </h2>
