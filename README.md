@@ -34,7 +34,7 @@ Easily personalize your website by editing a single configuration file!
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/amirmousav1/portfolio.git
 cd portfolio
 ```
 
