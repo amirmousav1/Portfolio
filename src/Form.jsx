@@ -1,7 +1,8 @@
 import { useForm, ValidationError } from "@formspree/react";
+import { formspreeEndpoint } from "./CustomizePortfolio";
 
 function Form() {
-  const [state, handleSubmit] = useForm("mzzbwlbg");
+  const [state, handleSubmit] = useForm(formspreeEndpoint);
   if (state.succeeded) {
     return (
       <p className="text-primary">
