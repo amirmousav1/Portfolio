@@ -51,6 +51,16 @@ export const skills = [
 // Your Projects
 export const projects = [
   {
+    title: "NEXTON eCommerce",
+    description:
+      "A modern e-commerce app built with Next.js, Tailwind CSS, and React Context, featuring light/dark mode, user authentication, and responsive design for a seamless shopping experience.",
+    year: "2024",
+    technologies: "NextJs, Tailwind",
+    image: "./nextonecommerce.vercel.app.png",
+    demoLink: "https://nextonecommerce.vercel.app",
+    githubLink: "https://github.com/amirmousav1/NEXTON-eCommerce",
+  },
+  {
     title: "MagnetMovie",
     description:
       "MagnetMovie is a powerful tool to search for your favorite movies and download their torrent files or copy magnet links to start downloading effortlessly.",
